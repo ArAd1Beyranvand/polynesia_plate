@@ -10,7 +10,8 @@ class NiueValidator extends GatedPlateValidator {
   static const String reasonSerial = 'The number is four digits.';
 
   @override
-  PlateValidation judge(PlateEntry entry) => isDigitsOfLength(entry.group('serial'), 4)
+  PlateValidation judge(PlateEntry entry) =>
+      isDigitsOfLength(entry.group('serial'), 4)
       ? const PlateValidation.valid()
       : const PlateValidation.invalid(reasonSerial);
 }

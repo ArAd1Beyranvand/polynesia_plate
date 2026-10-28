@@ -8,4 +8,5 @@ export 'src/french_polynesia_country.dart';
 export 'src/french_polynesia_themes.dart';
 export 'src/french_polynesia_plates.dart';
 export 'src/french_polynesia_validators.dart';
-export 'package:plate_alphabet/plate_alphabet.dart' show FrenchPolynesiaAlphabets;
+export 'package:plate_alphabet/plate_alphabet.dart'
+    show FrenchPolynesiaAlphabets;

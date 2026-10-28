@@ -10,10 +10,16 @@ import 'cook_islands_colors.dart';
 /// artwork by eye, not measured. The motorcycle photo shows neither.
 abstract final class CookIslandsThemes {
   /// Car plate: green on yellow.
-  static final PlateTheme car = _ink(CookIslandsColors.yellow, CookIslandsColors.green);
+  static final PlateTheme car = _ink(
+    CookIslandsColors.yellow,
+    CookIslandsColors.green,
+  );
 
   /// Motorcycle plate: dark on amber.
-  static final PlateTheme motorcycle = _ink(CookIslandsColors.amber, CookIslandsColors.amberInk);
+  static final PlateTheme motorcycle = _ink(
+    CookIslandsColors.amber,
+    CookIslandsColors.amberInk,
+  );
 }
 
 PlateTheme _ink(Color field, Color ink) => PlateTheme.monochrome(

@@ -53,7 +53,12 @@ abstract final class NiuePlates {
     labels: const <PlateLabel>[
       PlateLabel(
         text: 'N\nI\nU\nE',
-        box: PlateBox(_Layout.nameLeft, _Layout.nameTop, _Layout.nameWidth, _Layout.nameHeight),
+        box: PlateBox(
+          _Layout.nameLeft,
+          _Layout.nameTop,
+          _Layout.nameWidth,
+          _Layout.nameHeight,
+        ),
         glyphHeight: _Layout.nameGlyph,
         lineHeight: _Layout.nameLineHeight,
       ),

@@ -43,7 +43,8 @@ abstract final class WallisAndFutunaPlates {
   static List<PlateSpec> get all => <PlateSpec>[private];
 
   static PlateSpec _spec() {
-    const double pitch = (_Layout.digitsRight - _Layout.digitsLeft) / _Layout.digitsCount;
+    const double pitch =
+        (_Layout.digitsRight - _Layout.digitsLeft) / _Layout.digitsCount;
     return PlateSpec(
       id: 'wf.private',
       country: WallisAndFutunaCountry.wallis_and_futuna,
@@ -89,7 +90,12 @@ abstract final class WallisAndFutunaPlates {
         ),
         PlateLabel(
           text: 'WF',
-          box: PlateBox(_Layout.wfCentre - _Layout.wfWidth / 2, 0, _Layout.wfWidth, _Layout.height),
+          box: PlateBox(
+            _Layout.wfCentre - _Layout.wfWidth / 2,
+            0,
+            _Layout.wfWidth,
+            _Layout.height,
+          ),
           glyphHeight: _Layout.wfGlyph,
         ),
       ],

@@ -7,7 +7,10 @@ import 'wallis_and_futuna_colors.dart';
 /// ink. Frame ratio is France's (2.5 of 110); the radius is estimated, not
 /// measured.
 abstract final class WallisAndFutunaThemes {
-  static final PlateTheme front = _framed(WallisAndFutunaColors.white, WallisAndFutunaColors.black);
+  static final PlateTheme front = _framed(
+    WallisAndFutunaColors.white,
+    WallisAndFutunaColors.black,
+  );
   static final PlateTheme rear = _framed(
     WallisAndFutunaColors.yellow,
     WallisAndFutunaColors.yellowInk,

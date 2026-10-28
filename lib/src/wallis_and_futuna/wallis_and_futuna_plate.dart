@@ -3,7 +3,8 @@
 /// (rear), with an advisory validator.
 library;
 
-export 'package:plate_alphabet/plate_alphabet.dart' show WallisAndFutunaAlphabets;
+export 'package:plate_alphabet/plate_alphabet.dart'
+    show WallisAndFutunaAlphabets;
 
 export 'src/wallis_and_futuna_colors.dart';
 export 'src/wallis_and_futuna_country.dart';

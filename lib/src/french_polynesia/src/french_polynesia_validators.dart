@@ -10,7 +10,8 @@ class FrenchPolynesiaValidator extends GatedPlateValidator {
   String get gateGroup => 'number';
 
   static const String reasonNumber = 'The number is six digits.';
-  static const String reasonLetter = 'The letter is one of A–Z without I, O, U.';
+  static const String reasonLetter =
+      'The letter is one of A–Z without I, O, U.';
 
   static final RegExp _letter = RegExp(r'^[A-HJ-NP-TV-Z]$');
 
