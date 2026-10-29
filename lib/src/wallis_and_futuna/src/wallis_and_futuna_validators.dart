@@ -1,5 +1,8 @@
 import 'package:plate_core/plate_core.dart';
 
+// TODO(py): [D4-code] hand-port; reason strings are the contract, keep them byte-identical.
+// TODO(ts): [D4-code] hand-port; reason strings are the contract, keep them byte-identical.
+// TODO(kt): [D4-code] hand-port; reason strings are the contract, keep them byte-identical.
 /// Judges a Wallis and Futuna plate: a four-digit serial followed by the
 /// printed `WF`. Reports, never bars a keystroke.
 class WallisAndFutunaValidator extends GatedPlateValidator {
