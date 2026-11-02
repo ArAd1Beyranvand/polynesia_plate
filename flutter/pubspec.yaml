@@ -1,7 +1,7 @@
 name: polynesia_plate
 description: "Licence plates for polynesia members, for the plate_core library."
 version: 0.1.0
-repository: https://github.com/ArAd1Beyranvand/polynesia_plate
+repository: https://github.com/ArAd1Beyranvand/polynesia_plate/tree/main/flutter
 resolution: workspace
 
 environment:
