@@ -8,7 +8,18 @@ GO VEGAN 🌱
 
 Licence plates for polynesia members, for the plate_core library.
 
-## Install
+## Languages
+
+| Language | Folder | Example |
+| --- | --- | --- |
+| Flutter / Dart | [`flutter/`](https://github.com/ArAd1Beyranvand/polynesia_plate/tree/main/flutter) | — |
+| Kotlin | [`kotlin/`](https://github.com/ArAd1Beyranvand/polynesia_plate/tree/main/kotlin) | — |
+| Python | [`python/`](https://github.com/ArAd1Beyranvand/polynesia_plate/tree/main/python) | — |
+| TypeScript | [`typescript/`](https://github.com/ArAd1Beyranvand/polynesia_plate/tree/main/typescript) | — |
+
+## Quick start
+
+### Install
 
 ```yaml
 dependencies:
@@ -16,7 +27,7 @@ dependencies:
   polynesia_plate: ^0.1.0
 ```
 
-## Use
+### Use
 
 ```dart
 import 'package:plate_core/plate_core.dart';
@@ -31,17 +42,28 @@ PlateCanvas(
 );
 ```
 
-## Contains
+## Specs
 
-- `CookIslandsPlates` — 2 plate specs: `car`, `motorcycle`.
-- `FrenchPolynesiaPlates` — 1 plate spec: `regular`.
-- `NiuePlates` — 1 plate spec: `standard`.
-- `NorfolkIslandPlates` — 1 plate spec: `private`.
-- `WallisAndFutunaPlates` — 1 plate spec: `private`.
+Each spec is one plate layout.
 
-Each also ships its `…Country` panel, `…Themes` and, where one exists, an advisory `…Validator`.
+- none listed
+
+## Themes
+
+- none listed
+
+## Change it
+
+`PlateCanvas` takes `spec:` (an entry of `None`) and `theme:` (an entry of `None`).
+
+## Also included
+
+- none
 
 ## Part of plate
 
 Painted by [`plate_core`](https://pub.dev/packages/plate_core); alphabets shared through [`plate_alphabet`](https://pub.dev/packages/plate_alphabet); optional character picker in [`plate_keypad`](https://pub.dev/packages/plate_keypad).
 
+## License
+
+See [LICENSE](https://github.com/ArAd1Beyranvand/polynesia_plate/blob/main/LICENSE).

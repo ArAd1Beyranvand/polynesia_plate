@@ -8,7 +8,6 @@ abstract final class CookIslandsCountry {
   // ignore: constant_identifier_names
   static const PlateCountry cook_islands = PlateCountry(
     code: 'ck',
-    captionLines: <String>[],
     panelColor: CookIslandsColors.yellow,
     panelTextColor: CookIslandsColors.green,
   );

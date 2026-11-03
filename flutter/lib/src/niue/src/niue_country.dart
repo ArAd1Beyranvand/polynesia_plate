@@ -7,7 +7,6 @@ import 'niue_colors.dart';
 abstract final class NiueCountry {
   static const PlateCountry niue = PlateCountry(
     code: 'nu',
-    captionLines: <String>[],
     panelColor: NiueColors.white,
     panelTextColor: NiueColors.black,
   );

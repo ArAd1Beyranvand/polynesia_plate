@@ -25,7 +25,6 @@ abstract final class CookIslandsThemes {
 PlateTheme _ink(Color field, Color ink) => PlateTheme.monochrome(
   field: field,
   ink: ink,
-  inactive: CookIslandsColors.inactive,
   borderWidthRatio: 0.03,
   plateRadiusRatio: 0.08,
 );

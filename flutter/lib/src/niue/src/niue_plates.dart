@@ -1,7 +1,6 @@
 import 'package:plate_alphabet/plate_alphabet.dart';
 import 'package:plate_core/plate_core.dart';
 
-import 'niue_colors.dart';
 import 'niue_country.dart';
 
 /// Where the ink sits, in plate units (372 × 134 mm, the article's size).
@@ -36,8 +35,6 @@ abstract final class NiuePlates {
     country: NiueCountry.niue,
     canvasWidth: _Layout.width,
     canvasHeight: _Layout.height,
-    panel: const PlatePanel(box: PlateBox(0, 0, 0, 0)),
-    noPanel: true,
     slots: const <PlateSlot>[
       PlateSlot(
         alphabet: NiueAlphabets.digits,
@@ -48,6 +45,7 @@ abstract final class NiuePlates {
           _Layout.digitBox,
         ),
         length: 4,
+        group: 'serial',
       ),
     ],
     labels: const <PlateLabel>[
@@ -62,9 +60,6 @@ abstract final class NiuePlates {
         glyphHeight: _Layout.nameGlyph,
         lineHeight: _Layout.nameLineHeight,
       ),
-    ],
-    textGroups: const <PlateTextGroup>[
-      PlateTextGroup(<int>[0], key: 'serial'),
     ],
   );
 

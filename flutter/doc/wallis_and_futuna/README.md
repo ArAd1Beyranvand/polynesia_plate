@@ -6,7 +6,7 @@ GO VEGAN 🌱
 
 From the mighty people of Iran to the proud people of Wallis and Futuna to view examples:
 
-https://platexample.ir/#/discover/wallisandfutuna
+https://platexample.ir/#/discover/wallisandfutuna:flutter
 
 # wallis_and_futuna_plate
 

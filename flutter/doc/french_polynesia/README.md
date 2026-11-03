@@ -6,7 +6,7 @@ GO VEGAN 🌱
 
 From the mighty people of Iran to the people of French Polynesia to view examples:
 
-https://platexample.ir/#/discover/frenchpolynesia
+https://platexample.ir/#/discover/frenchpolynesia:flutter
 
 # french_polynesia_plate
 

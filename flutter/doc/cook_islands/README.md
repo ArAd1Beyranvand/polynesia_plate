@@ -6,7 +6,7 @@ GO VEGAN 🌱
 
 From the mighty people of Iran to the warm-hearted people of Cook Islands to view examples:
 
-https://platexample.ir/#/discover/cookislands
+https://platexample.ir/#/discover/cookislands:flutter
 
 # cook_islands_plate
 

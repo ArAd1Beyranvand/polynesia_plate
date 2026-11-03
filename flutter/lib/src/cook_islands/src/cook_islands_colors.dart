@@ -12,6 +12,4 @@ abstract final class CookIslandsColors {
 
   static const Color amber = Color(0xFFF0B848);
   static const Color amberInk = Color(0xFF1C1E1E); // CALIBRATE
-
-  static const Color inactive = Color(0xFFB0B0B0);
 }

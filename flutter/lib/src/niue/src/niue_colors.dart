@@ -7,6 +7,4 @@ abstract final class NiueColors {
 
   /// Characters and frame, `000000`.
   static const Color black = Color(0xFF000000);
-
-  static const Color inactive = Color(0xFFB0B0B0);
 }

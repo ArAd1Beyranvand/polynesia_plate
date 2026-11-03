@@ -20,7 +20,6 @@ abstract final class WallisAndFutunaThemes {
 PlateTheme _framed(Color field, Color ink) => PlateTheme.monochrome(
   field: field,
   ink: ink,
-  inactive: WallisAndFutunaColors.inactive,
   borderWidthRatio: 0.0227,
   plateRadiusRatio: 0.055,
 );

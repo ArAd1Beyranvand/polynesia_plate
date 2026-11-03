@@ -13,7 +13,6 @@ abstract final class FrenchPolynesiaThemes {
   static PlateTheme _theme(Color field) => PlateTheme.monochrome(
     field: field,
     ink: FrenchPolynesiaColors.black,
-    inactive: FrenchPolynesiaColors.inactive,
     borderWidthRatio: 0.0227,
     plateRadiusRatio: 0.055,
   );

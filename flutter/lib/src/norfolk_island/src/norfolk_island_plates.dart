@@ -42,8 +42,6 @@ abstract final class NorfolkIslandPlates {
     country: NorfolkIslandCountry.norfolk_island,
     canvasWidth: _Layout.width,
     canvasHeight: _Layout.height,
-    panel: const PlatePanel(box: PlateBox(0, 0, 0, 0)),
-    noPanel: true,
     slots: const <PlateSlot>[
       PlateSlot(
         alphabet: NorfolkIslandAlphabets.digits,
@@ -54,6 +52,7 @@ abstract final class NorfolkIslandPlates {
           _Layout.digitBox,
         ),
         length: 1,
+        group: 'block',
       ),
       PlateSlot(
         alphabet: NorfolkIslandAlphabets.digits,
@@ -64,14 +63,15 @@ abstract final class NorfolkIslandPlates {
           _Layout.digitBox,
         ),
         length: 3,
+        group: 'serial',
       ),
     ],
     labels: const <PlateLabel>[
       PlateLabel(
         text: 'N·I',
-        box: PlateBox(
-          _Layout.capCx - _Layout.capWidth / 2,
-          _Layout.capCy - _Layout.capHeight / 2,
+        box: PlateBox.centered(
+          _Layout.capCx,
+          _Layout.capCy,
           _Layout.capWidth,
           _Layout.capHeight,
         ),
@@ -82,10 +82,6 @@ abstract final class NorfolkIslandPlates {
         box: PlateBox(_Layout.dotCx - 20, _Layout.dotCy - 20, 40, 40),
         glyphHeight: _Layout.dotGlyph,
       ),
-    ],
-    textGroups: const <PlateTextGroup>[
-      PlateTextGroup(<int>[0], key: 'block'),
-      PlateTextGroup(<int>[1], key: 'serial'),
     ],
   );
 

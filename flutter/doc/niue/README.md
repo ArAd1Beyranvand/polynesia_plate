@@ -6,7 +6,7 @@ GO VEGAN 🌱
 
 From the mighty people of Iran to the gracious people of Niue to view examples:
 
-https://platexample.ir/#/discover/niue
+https://platexample.ir/#/discover/niue:flutter
 
 # niue_plate
 

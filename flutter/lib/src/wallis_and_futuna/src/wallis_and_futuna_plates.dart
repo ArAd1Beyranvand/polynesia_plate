@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/widgets.dart' show EdgeInsets;
 import 'package:plate_alphabet/plate_alphabet.dart';
 import 'package:plate_core/plate_core.dart';
@@ -24,10 +22,8 @@ import 'wallis_and_futuna_country.dart';
 /// and `WF 1234`); their pictures are history, and the infobox's black on
 /// white/yellow is what the current photo shows.
 abstract final class _Layout {
-  static const double width = 520, height = 110;
-  static const double bandEnd = 50, bandCx = 26.75;
-  static const double digitsLeft = 108.5, digitsRight = 302;
-  static const double digitsCount = 4;
+  static const double width = 520, height = 110, bandEnd = 50, bandCx = 26.75;
+  static const double digitsLeft = 108.5, digitsRight = 302, digitsCount = 4;
   static const double wfCentre = 410.9, wfGlyph = 100, wfWidth = 100;
 
   /// The stars' panel block, and the `F` under it (France's photo: cap 21.5).
@@ -73,7 +69,8 @@ abstract final class WallisAndFutunaPlates {
             _Layout.height,
           ),
           length: 4,
-          spacing: max(0, pitch - 0.6 * 0.72 * _Layout.height),
+          spacing: plateRunSpacing(pitch, _Layout.height),
+          group: 'number',
         ),
       ],
       labels: const <PlateLabel>[
@@ -98,9 +95,6 @@ abstract final class WallisAndFutunaPlates {
           ),
           glyphHeight: _Layout.wfGlyph,
         ),
-      ],
-      textGroups: const <PlateTextGroup>[
-        PlateTextGroup(<int>[0], key: 'number'),
       ],
     );
   }

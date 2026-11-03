@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:plate_alphabet/plate_alphabet.dart';
 import 'package:plate_core/plate_core.dart';
 
@@ -51,9 +49,9 @@ abstract final class CookIslandsPlates {
     slots: <PlateSlot>[
       PlateSlot(
         alphabet: CookIslandsAlphabets.digits,
-        box: PlateBox(
-          _Layout.carCx - _Layout.carDigitsWidth / 2,
-          _Layout.carDigitsCy - _Layout.carDigitsBox / 2,
+        box: PlateBox.centered(
+          _Layout.carCx,
+          _Layout.carDigitsCy,
           _Layout.carDigitsWidth,
           _Layout.carDigitsBox,
         ),
@@ -78,34 +76,23 @@ abstract final class CookIslandsPlates {
       _motoField(CookIslandsAlphabets.letters, _Layout.motoLettersCy),
       _motoField(CookIslandsAlphabets.digits, _Layout.motoDigitsCy),
     ],
-    groups: <PlateTextGroup>[
-      PlateTextGroup(<int>[0], key: 'letters'),
-      PlateTextGroup(<int>[1], key: 'serial'),
-    ],
+    groups: PlateTextGroup.perSlot(<String>['letters', 'serial']),
   );
 
   static List<PlateSpec> get all => <PlateSpec>[car, motorcycle];
 
-  static PlateSlot _motoField(PlateAlphabet alphabet, double cy) => PlateSlot(
-    alphabet: alphabet,
-    box: PlateBox(
-      (_Layout.motoWidth - _Layout.motoFieldWidth) / 2,
-      cy - _Layout.motoBox / 2,
-      _Layout.motoFieldWidth,
-      _Layout.motoBox,
-    ),
-    length: 3,
-    spacing: max(0, _Layout.motoFieldWidth / 3 - 0.6 * 0.72 * _Layout.motoBox),
+  static PlateSlot _motoField(PlateAlphabet alphabet, double cy) => plateRun(
+    alphabet,
+    3,
+    left: (_Layout.motoWidth - _Layout.motoFieldWidth) / 2,
+    top: cy - _Layout.motoBox / 2,
+    pitch: _Layout.motoFieldWidth / 3,
+    height: _Layout.motoBox,
   );
 
   static PlateLabel _caption(String text, double cx, double cy) => PlateLabel(
     text: text,
-    box: PlateBox(
-      cx - _Layout.captionWidth / 2,
-      cy - _Layout.captionBox / 2,
-      _Layout.captionWidth,
-      _Layout.captionBox,
-    ),
+    box: PlateBox.centered(cx, cy, _Layout.captionWidth, _Layout.captionBox),
     glyphHeight: _Layout.captionBox,
   );
 
@@ -121,8 +108,6 @@ abstract final class CookIslandsPlates {
     country: CookIslandsCountry.cook_islands,
     canvasWidth: width,
     canvasHeight: height,
-    panel: const PlatePanel(box: PlateBox(0, 0, 0, 0)),
-    noPanel: true,
     slots: slots,
     textGroups: groups,
     labels: labels,

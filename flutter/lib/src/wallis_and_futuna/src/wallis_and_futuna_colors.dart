@@ -10,5 +10,4 @@ abstract final class WallisAndFutunaColors {
   static const Color yellow = Color(0xFFDCA239);
   static const Color yellowInk = Color(0xFF040204);
   static const Color euroBlue = Color(0xFF003399);
-  static const Color inactive = Color(0xFFB0B0B0);
 }

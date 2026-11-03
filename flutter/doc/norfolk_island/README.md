@@ -6,7 +6,7 @@ GO VEGAN 🌱
 
 From the mighty people of Iran to the people of Norfolk Island to view examples:
 
-https://platexample.ir/#/discover/norfolkisland
+https://platexample.ir/#/discover/norfolkisland:flutter
 
 # norfolk_island_plate
 

@@ -8,7 +8,6 @@ abstract final class NiueThemes {
   static final PlateTheme standard = PlateTheme.monochrome(
     field: NiueColors.white,
     ink: NiueColors.black,
-    inactive: NiueColors.inactive,
     borderWidthRatio: 0.03,
     plateRadiusRatio: 0.06,
   );

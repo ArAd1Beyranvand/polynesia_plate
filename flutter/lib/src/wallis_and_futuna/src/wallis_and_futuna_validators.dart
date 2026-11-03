@@ -1,23 +1,14 @@
 import 'package:plate_core/plate_core.dart';
 
-// TODO(py): [D4-code] hand-port; reason strings are the contract, keep them byte-identical.
-// TODO(ts): [D4-code] hand-port; reason strings are the contract, keep them byte-identical.
-// TODO(kt): [D4-code] hand-port; reason strings are the contract, keep them byte-identical.
 /// Judges a Wallis and Futuna plate: a four-digit serial followed by the
 /// printed `WF`. Reports, never bars a keystroke.
-class WallisAndFutunaValidator extends GatedPlateValidator {
+class WallisAndFutunaValidator extends RuledPlateValidator {
   const WallisAndFutunaValidator();
-
-  @override
-  String get gateGroup => 'number';
 
   static const String reasonNumber = 'The serial is four digits.';
 
   @override
-  PlateValidation judge(PlateEntry entry) {
-    if (!isDigitsOfLength(entry.group('number'), 4)) {
-      return const PlateValidation.invalid(reasonNumber);
-    }
-    return const PlateValidation.valid();
-  }
+  List<PlateCheck> get checks => const <PlateCheck>[
+    PlateCheck('number', r'[0-9]{4}', reasonNumber),
+  ];
 }

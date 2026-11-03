@@ -8,7 +8,6 @@ import 'norfolk_island_colors.dart';
 abstract final class NorfolkIslandCountry {
   static const PlateCountry norfolk_island = PlateCountry(
     code: 'nf',
-    captionLines: <String>[],
     panelColor: NorfolkIslandColors.yellow,
     panelTextColor: NorfolkIslandColors.black,
   );

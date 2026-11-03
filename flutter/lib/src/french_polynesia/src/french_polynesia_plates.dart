@@ -16,8 +16,7 @@ import 'french_polynesia_country.dart';
 ///
 /// Not drawn: the 1993 series photo (`123456 P` on yellow, the same format).
 abstract final class _Layout {
-  static const double width = 520, height = 110;
-  static const double bandEnd = 52, bandCx = 26.75;
+  static const double width = 520, height = 110, bandEnd = 52, bandCx = 26.75;
   static const double panelWidth = 46, panelHeight = 70.4;
   static const double fTop = 65.5, fHeight = 22, fGlyph = 39, fWidth = 20;
 
@@ -52,11 +51,13 @@ abstract final class FrenchPolynesiaPlates {
         alphabet: FrenchPolynesiaAlphabets.digits,
         box: PlateBox(_Layout.digitsLeft, 0, _Layout.digitsWidth, 110),
         length: 6,
+        group: 'number',
       ),
       PlateSlot(
         alphabet: FrenchPolynesiaAlphabets.letters,
         box: PlateBox(_Layout.letterLeft, 0, _Layout.letterWidth, 110),
         length: 1,
+        group: 'letter',
       ),
     ],
     labels: <PlateLabel>[
@@ -71,10 +72,6 @@ abstract final class FrenchPolynesiaPlates {
         glyphHeight: _Layout.fGlyph,
         color: FrenchPolynesiaColors.white,
       ),
-    ],
-    textGroups: const <PlateTextGroup>[
-      PlateTextGroup(<int>[0], key: 'number'),
-      PlateTextGroup(<int>[1], key: 'letter'),
     ],
   );
 
