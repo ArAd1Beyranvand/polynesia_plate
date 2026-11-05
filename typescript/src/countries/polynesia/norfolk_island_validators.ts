@@ -1,4 +1,4 @@
-import { PlateCheck, RuledPlateValidator } from '../../core/validators/plate_validator';
+import { PlateCheck, RuledPlateValidator } from 'plate_core/core/validators/plate_validator';
 
 /** Judges a `3◆203` value: a block digit 1 to 7, then three digits (leading
 /// zeros are printed; cancelled blocks were reissued from 000). Reports,

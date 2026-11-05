@@ -1,4 +1,4 @@
-import { PlateCheck, RuledPlateValidator } from '../../core/validators/plate_validator';
+import { PlateCheck, RuledPlateValidator } from 'plate_core/core/validators/plate_validator';
 
 /**
  * Judges a French Polynesia plate: six digits and one letter, as in

@@ -1,4 +1,4 @@
-import { PlateCheck, RuledPlateValidator } from '../../core/validators/plate_validator';
+import { PlateCheck, RuledPlateValidator } from 'plate_core/core/validators/plate_validator';
 
 /** Judges a Wallis and Futuna plate: a four-digit serial followed by the
  * printed `WF`. Reports, never bars a keystroke. */
